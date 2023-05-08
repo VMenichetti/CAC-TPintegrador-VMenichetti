@@ -1,0 +1,30 @@
+h4, h1 {
+    text-align: center;
+  }
+  
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  
+  .card {
+    margin-bottom: 0rem;
+    border: 0;
+  }
+  
+  .card-img-top {
+    padding: 20px;
+    height: 300px;
+    width: auto;
+    object-fit: cover;
+  }
+  .card-body{
+    font-size: 14px;
+
+  }
+  .btn-sm {
+    font-size: 0.7rem;
+  }
+  

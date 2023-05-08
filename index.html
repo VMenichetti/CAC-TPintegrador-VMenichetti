@@ -4,9 +4,125 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
     <title>Document</title>
 </head>
 <body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <!-- Logo en la parte izquierda -->
+        <a class="navbar-brand" href="index.html">
+          <img src="./img/logo-CAC.png" alt="Logo" width="12%">
+        </a>
+    
+        <!-- Botón para colapsar el navbar en dispositivos pequeños -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+    
+        <!-- Links a la derecha -->
+        <div class="collapse navbar-collapse justify-content-end w-100" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">La conferencia</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Los oradores</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">El lugar y la fecha</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Conviertete en orador</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Comprar tickets</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  <!-- Imagen con descripción a la derecha -->
+  <div class="d-flex">
+    <img src="./img/cck_centro_cultural_kirchner_1200_ballena2.jpg" style="width:100%;" alt="Conferencias">
+    <div >
+    <div style="position:absolute; bottom:0; right:0; color:white; padding:10px;">
+      <h3>Conferencias en Buenos Aires</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae quas quidem esse commodi aperiam totam mollitia excepturi id corporis delectus, tempora hic, est sint sequi vel doloribus similique tenetur? Dicta!</p>
+    </div>
+    </div>
+  </div>
+  <br>
+  
+
+  <!-- Cards de oradores -->
+  <h4>CONOCE A LOS</h4>
+  <h1>ORADORES</h1>
+  <div class="container mx-auto my-auto">
+    <div class="row justify-content-around">
+      <div class="col-md-3">
+        <div class="card">
+          <img class="card-img-top" src="./img/Elon Musk.jpg" alt="Card image cap">
+          <div class="card-body">
+            <button type="button" class="btn btn-warning btn-sm"><b>JavaScript</b></button>
+            <button type="button" class="btn btn-primary btn-sm"><b>React</b></button> 
+            <h5 class="card-title">Elon Musk</h5>
+            <p class="card-text">Es el fundador, consejero delegado e ingeniero jefe de SpaceX; inversor ángel, CEO y arquitecto de productos de Tesla, Inc.; fundador de The Boring Company; cofundador de Neuralink y OpenAI</p>
+          </div>
+        </div>
+      </div>
+    
+      <div class="col-md-3">
+        <div class="card">
+          <img class="card-img-top" src="./img/Bill Gates.jpg" alt="Card image cap">
+          <div class="card-body">
+            <button type="button" class="btn btn-warning btn-sm"><b>JavaScript</b></button>
+            <button type="button" class="btn btn-primary btn-sm"><b>React</b></button>
+            <h5 class="card-title">Bill Gates</h5>
+            <p class="card-text">Es cofundador de Microsoft, junto con su difunto amigo de la infancia Paul Allen. Durante su carrera en Microsoft, Gates ocupó los cargos de presidente, director ejecutivo (CEO), presidente y arquitecto jefe de software</p>
+          </div>
+        </div>
+      </div>
+    
+      <div class="col-md-3">
+        <div class="card">
+          <img class="card-img-top" src="./img/Mark Zuckerberg.jpg" alt="Card image cap">
+          <div class="card-body">
+            <button type="button" class="btn btn-secondary btn-sm"><b>Negocios</b></button>
+            <button type="button" class="btn btn-danger btn-sm"><b>Meta</b></button>
+            <h5 class="card-title">Mark Zuckerberg</h5>
+            <p class="card-text">es un programador y empresario estadounidense, uno de los creadores y fundadores de Facebook (desde 2021, Meta Platforms) y la red social homónima, y su actual presidente.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+<!-- Card Overlay -->
+<div class="card bg-dark">
+    <div class="row g-0">
+      <div class="col-5 col-sm-6">
+        <img src="./img/Puerto Madero.jpg" class="img-fluid w-100" alt="card-horizontal-image">
+      </div>
+      <div class="col-5 col-sm-6">
+        <div class="card-body text-white">
+          <h5 class="card-title">Bs As - Puerto Madero</h5>
+          <p class="card-text">Desde los edificios de ladrillo rojo renovados y las grúas del puerto hasta los modernos rascacielos y los lujosos bloques de apartamentos, Puerto Madero combina a la perfección lo antiguo y lo moderno. El río ofrece un ambiente tranquilo y relajado que contrasta con el ajetreo y bullicio del tráfico a tan solo unas manzanas. Cruzando el río, flanqueado por rascacielos, encontrarás preciosos parques y calles tranquilas que hacen de este barrio un destino único en una ciudad tan transitada como Buenos Aires. Los restaurantes, bares y clubes nocturnos del muelle lo convierten en uno de los lugares más populares para salir por la noche y han llegado a simbolizar esta zona. Puerto Madero impresiona aún más cuando cae la noche, momento en el que las luces del muelle y los rascacielos destacan sobre el cielo nocturno.</p>
+          <button type="button" class="btn btn-outline-light">Conocer más</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  
+  
+  
+
     
 </body>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
 </html>
